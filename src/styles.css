@@ -1,9 +1,17 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
 body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 1rem;
 
   .container {
+    height: calc(100vh - 2rem);
     display: grid;
     grid-template-areas:
       "header"
@@ -40,11 +48,21 @@ body {
 }
 
 @media screen and (min-width: 900px) {
-  .container {
-    grid-template-areas:
-      "header header"
-      "left-side-bar main"
-      "footer footer";
-    grid-template-columns: 150px 1fr;
+  body {
+    .container {
+      grid-template-areas:
+        "header header"
+        "left-side-bar main"
+        "footer footer";
+      grid-template-columns: 150px auto;
+      grid-template-rows: 50px auto 50px;
+      .left-side-bar {
+        nav {
+          ul {
+            display: block;
+          }
+        }
+      }
+    }
   }
 }
