@@ -1,0 +1,19 @@
+{
+  "name": "udacity-personal-blog-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahelmi365/udacity-personal-blog-website.git"
+  },
+  "author": "Ali Helmi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahelmi365/udacity-personal-blog-website/issues"
+  },
+  "homepage": "https://github.com/ahelmi365/udacity-personal-blog-website#readme",
+  "description": ""
+}
