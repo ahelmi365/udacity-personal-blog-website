@@ -1,0 +1,15 @@
+.posts-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .post-card {
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    flex-basis: 30%;
+    /* flex-grow: 1; */
+    min-width: 350px;
+  }
+}
