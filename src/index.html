@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="./index.js" defer></script>
     <title>Personal Bblog Website</title>
   </head>
   <body>
@@ -14,109 +14,19 @@
       </header>
       <aside class="left-side-bar">
         <nav>
-          <ul>
+          <ul id="side-bar-user-list">
             <li>
-              <a href="./posts/post1/index.html">Post 1</a>
-            </li>
-            <li>
-              <a href="./posts/post1/index.html">Post 1</a>
-            </li>
-            <li>
-              <a href="./posts/post1/index.html">Post 1</a>
-            </li>
-            <li>
-              <a href="./posts/post1/index.html">Post 1</a>
-            </li>
-            <li>
-              <a href="./posts/post1/index.html">Post 1</a>
+              <a href="#">All Authors</a>
             </li>
           </ul>
         </nav>
       </aside>
       <main class="main-content">
-        <h2 class="main-content-title">List of all posts</h2>
-        <section class="cards-container">
-          <div class="user-card" id="1">
-            <h3 class="card-title" id="user-name">card-title</h3>
-            <div id="card-body">
-              <p id="user-phone"></p>
-              <p id="user-site"></p>
-              <p id="user-email"></p>
-            </div>
-          </div>
-          <div class="user-card" id="2">
-            <h3 class="card-title" id="user-name">card-title</h3>
-            <div class="card-body">
-              <p id="user-phone"></p>
-              <p id="user-site"></p>
-              <p id="user-email"></p>
-            </div>
-          </div>
-          <div class="user-card" id="3">
-            <h3 class="card-title" id="user-name">card-title</h3>
-            <div class="card-body">
-              <p id="user-phone"></p>
-              <p id="user-site"></p>
-              <p id="user-email"></p>
-            </div>
-          </div>
-          <div class="user-card" id="4">
-            <h3 class="card-title" id="user-name">card-title</h3>
-            <div class="card-body">
-              <p id="user-phone"></p>
-              <p id="user-site"></p>
-              <p id="user-email"></p>
-            </div>
-          </div>
-          <div class="user-card" id="5">
-            <h3 class="card-title" id="user-name">card-title</h3>
-            <div class="card-body">
-              <p id="user-phone"></p>
-              <p id="user-site"></p>
-              <p id="user-email"></p>
-            </div>
-          </div>
-          <div class="user-card" id="6">
-            <h3 class="card-title" id="user-name">card-title</h3>
-            <div class="card-body">
-              <p id="user-phone"></p>
-              <p id="user-site"></p>
-              <p id="user-email"></p>
-            </div>
-          </div>
-          <div class="user-card" id="7">
-            <h3 class="card-title" id="user-name">card-title</h3>
-            <div class="card-body">
-              <p id="user-phone"></p>
-              <p id="user-site"></p>
-              <p id="user-email"></p>
-            </div>
-          </div>
-          <div class="user-card" id="8">
-            <h3 class="card-title" id="user-name">card-title</h3>
-            <div class="card-body">
-              <p id="user-phone"></p>
-              <p id="user-site"></p>
-              <p id="user-email"></p>
-            </div>
-          </div>
-          <div class="user-card" id="9">
-            <h3 class="card-title" id="user-name">card-title</h3>
-            <div class="card-body">
-              <p id="user-phone"></p>
-              <p id="user-site"></p>
-              <p id="user-email"></p>
-            </div>
-          </div>
-          <div class="user-card" id="10">
-            <h3 class="card-title" id="user-name">card-title</h3>
-            <div class="card-body">
-              <p id="user-phone"></p>
-              <p id="user-site"></p>
-              <p id="user-email"></p>
-            </div>
-          </div>
-        </section>
+        <h2 class="main-content-title">List of All Users</h2>
+        <section
+          class="user-cards-container"
+          id="user-cards-container"
+        ></section>
       </main>
       <footer class="footer">
         <p>footer</p>
