@@ -6,11 +6,15 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+.bold-text {
+  font-weight: bolder;
+}
+
 body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 1rem;
-
   .container {
     height: calc(100vh - 2rem);
     display: grid;
@@ -30,7 +34,9 @@ body {
       border: 1px solid gray;
       border-radius: 0.5rem;
       padding: 1rem;
-      box-shadow: 0px 7px 0 0 gray;
+      box-shadow: -5px 7px 3px 3px darkcyan;
+      color: darkcyan;
+      text-align: center;
     }
     .left-side-bar {
       grid-area: left-side-bar;
@@ -45,17 +51,19 @@ body {
           gap: 1rem;
           list-style: none;
           li {
-            padding: 10px 8px;
             border-radius: 10px;
-            /* flex-basis: 300px; */
             text-wrap: nowrap;
             a {
-              text-decoration: none;
-              color: blue;
+              padding: 10px 8px;
+              /* text-decoration: none; */
+              color: darkcyan;
+              width: 100%;
+              display: inline-block;
+              font-weight: bold;
             }
           }
           li:hover {
-            background-color: gray;
+            background-color: darkcyan;
             transition: all 0.5s;
             a {
               color: white;
@@ -74,12 +82,16 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
+      .main-content-title {
+        align-self: flex-start;
+      }
       .user-cards-container {
         margin-top: 1rem;
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;
+
         .user-card {
           border: 1px solid gray;
           border-radius: 0.5rem;
@@ -89,6 +101,27 @@ body {
           display: flex;
           flex-direction: column;
           box-shadow: -5px 5px 5px 0px gray;
+
+          .card-title {
+            text-align: center;
+            background-color: darkcyan;
+            padding: 0.5rem;
+            margin-bottom: 8px;
+            border-radius: 0.5rem 0.5rem 0px 0px;
+            color: white;
+          }
+          #card-body {
+            font-size: 1rem;
+            p {
+              padding-top: 5px;
+            }
+            #userDetailsLink {
+              display: inline-block;
+              margin-top: 1rem;
+              color: darkcyan;
+              font-weight: bold;
+            }
+          }
         }
         .user-card:hover {
           transform: scale(1.02);
