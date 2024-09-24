@@ -17,11 +17,12 @@ window.addEventListener("DOMContentLoaded", () => {
       <div class="user-card" id=${user.id}>
         <h3 class="card-title" id="user-name">${user.name}</h3>
         <div id="card-body">
-          <p id="user-phone">${user.phone}</p>
-          <p id="user-site">${user.website}</p>
-          <p id="user-email">${user.email}</p>
-          <a href="./user-posts/index.html?id=${user.id}&name=${user.name}" id="userDetailsLink">
-            Check Posts...
+          <p id="user-phone"><span class="bold-text">Tel:</span> ${user.phone}</p>
+          <p id="user-site"><span class="bold-text">Website:</span> ${user.website}</p>
+          <p id="user-email"><span class="bold-text">Email:</span> ${user.email}</p>
+          <a href="./user-posts/index.html?id=${user.id}&name=${user.name}" 
+            id="userDetailsLink">
+              Check Posts...
           </a>
         </div>
       </div>
