@@ -20,10 +20,12 @@ window.addEventListener("DOMContentLoaded", () => {
           <p id="user-phone"><span class="bold-text">Tel:</span> ${user.phone}</p>
           <p id="user-site"><span class="bold-text">Website:</span> ${user.website}</p>
           <p id="user-email"><span class="bold-text">Email:</span> ${user.email}</p>
-          <a href="./user-posts/index.html?id=${user.id}&name=${user.name}" 
+          
+            <a href="./user-posts/index.html?id=${user.id}&name=${user.name}" 
             id="userDetailsLink">
-              Check Posts...
-          </a>
+            <button>Check Posts</button>
+            </a>
+          
         </div>
       </div>
     `;

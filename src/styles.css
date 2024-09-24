@@ -34,9 +34,10 @@ body {
       border: 1px solid gray;
       border-radius: 0.5rem;
       padding: 1rem;
-      box-shadow: -5px 7px 3px 3px darkcyan;
-      color: darkcyan;
+      box-shadow: -5px 8px 3px 1px #b1d4e0;
+      color: white;
       text-align: center;
+      background-color: #145da0;
     }
     .left-side-bar {
       grid-area: left-side-bar;
@@ -56,14 +57,14 @@ body {
             a {
               padding: 10px 8px;
               /* text-decoration: none; */
-              color: darkcyan;
+              color: #0c2d48;
               width: 100%;
               display: inline-block;
               font-weight: bold;
             }
           }
           li:hover {
-            background-color: darkcyan;
+            background-color: #0c2d48;
             transition: all 0.5s;
             a {
               color: white;
@@ -97,14 +98,14 @@ body {
           border-radius: 0.5rem;
           padding: 0.5rem;
           width: 250px;
-          height: 200px;
+          height: 180px;
           display: flex;
           flex-direction: column;
           box-shadow: -5px 5px 5px 0px gray;
 
           .card-title {
             text-align: center;
-            background-color: darkcyan;
+            background-color: #0c2d48;
             padding: 0.5rem;
             margin-bottom: 8px;
             border-radius: 0.5rem 0.5rem 0px 0px;
@@ -118,14 +119,21 @@ body {
             #userDetailsLink {
               display: inline-block;
               margin-top: 1rem;
-              color: darkcyan;
-              font-weight: bold;
+              button {
+                color: white;
+                cursor: pointer;
+                /* font-weight: bold; */
+                padding: 0.5rem;
+                border: 1px solid #2e8bc0;
+                border-radius: 0.5rem;
+                background-color: #2e8bc0;
+              }
             }
           }
         }
         .user-card:hover {
-          transform: scale(1.02);
-          transition: all 0.5s;
+          transform: scale(1.01);
+          transition: all 0.3s;
         }
       }
     }
