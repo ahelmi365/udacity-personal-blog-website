@@ -84,6 +84,27 @@ body {
       flex-direction: column;
       align-items: center;
 
+      .author-info {
+        align-self: flex-start;
+        margin-left: 2rem;
+
+        .author-info-title {
+          display: flex;
+          align-items: center;
+        }
+
+        ul li {
+          margin-top: 7px;
+        }
+        .user-avatar {
+          width: 50px;
+        }
+
+        .social-sharing {
+          margin-top: 1rem;
+        }
+      }
+
       .user-cards-container {
         margin-top: 1rem;
         display: flex;
