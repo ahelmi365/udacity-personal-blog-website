@@ -18,7 +18,29 @@ body {
       border-radius: 0.5rem;
       flex-basis: 30%;
       /* flex-grow: 1; */
+      .post-title {
+        font-size: 1rem;
+      }
       min-width: 350px;
+      figure {
+        border: thin #c0c0c0 solid;
+        display: flex;
+        flex-flow: column;
+        padding: 5px;
+        max-width: 400px;
+        margin: auto;
+        figcaption {
+          background-color: #222;
+          color: #fff;
+          font: italic smaller sans-serif;
+          padding: 3px;
+          text-align: center;
+        }
+        .post-image {
+          width: 100%;
+          height: auto;
+        }
+      }
     }
   }
 }
