@@ -25,7 +25,9 @@ document.addEventListener("DOMContentLoaded", async () => {
               />
               <figcaption>An image from nature</figcaption>
             </figure>
-            <p class="post-body">${post.body} ${post.body} ${post.body}</p>
+            <article class="post-body">${post.body} ${post.body} ${
+            post.body
+          }</article>
           </div>`;
           document.querySelector(".posts-container").innerHTML += newPostHTML;
         });
