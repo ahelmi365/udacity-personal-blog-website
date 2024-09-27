@@ -7,14 +7,24 @@ document.addEventListener("DOMContentLoaded", async () => {
   const spanUserNameElm = document.getElementById("userName");
   spanUserNameElm.textContent = userName;
 
-  const getPostsById = async (id) => {
+  const getPostsById = (id) => {
+    const path = "../../assets/images/1.png";
     fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
       .then((res) => res.json())
       .then((posts) => {
-        posts.forEach((post) => {
-          const newPostHTML = `
-          <div class="post-card">
+        posts.forEach((post, i) => {
+          console.log({ i });
+          const newPostHTML = `<div class="post-card">
             <h3 class="post-title">${post.title.toUpperCase()}</h3>
+            <figure>
+              <img
+                src="../../assets/images/${i + 1}.png"
+                alt="post-image"
+                srcset=""
+                class="post-image"
+              />
+              <figcaption>An image from nature</figcaption>
+            </figure>
             <p class="post-body">${post.body} ${post.body} ${post.body}</p>
           </div>`;
           document.querySelector(".posts-container").innerHTML += newPostHTML;
