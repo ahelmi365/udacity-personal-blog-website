@@ -13,12 +13,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       .then((res) => res.json())
       .then((posts) => {
         posts.forEach((post, i) => {
-          console.log({ i });
           const newPostHTML = `<div class="post-card">
             <h3 class="post-title">${post.title.toUpperCase()}</h3>
             <figure>
               <img
-                src="../../assets/images/${i + 1}.png"
+                src="../imgs/${i + 1}.png"
                 alt="post-image"
                 srcset=""
                 class="post-image"

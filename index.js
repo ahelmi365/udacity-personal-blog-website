@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", () => {
           <p id="user-site"><span class="bold-text">Website:</span> ${user.website}</p>
           <p id="user-email"><span class="bold-text">Email:</span> ${user.email}</p>
           
-            <a href="./user-posts/index.html?id=${user.id}&name=${user.name}" 
+            <a href="./pages/user-posts.html?id=${user.id}&name=${user.name}" 
             id="userDetailsLink">
             <button>Check Posts</button>
             </a>
@@ -36,7 +36,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const setSideBarUserNames = (user) => {
     const newLiElm = `
     <li>
-      <a href="./user-posts/index.html?id=${user.id}&name=${user.name}">${user.name}</a>
+      <a href="./pages/user-posts.html?id=${user.id}&name=${user.name}">${user.name}</a>
     </li>
     `;
     sideBarUserNamesElm.innerHTML += newLiElm;
